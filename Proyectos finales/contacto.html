@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Aprende Programación</title>
+    <meta name="description" content="Ponte en contacto con nosotros para más información o consultas sobre programación.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+    <!-- Encabezado y navegación -->
+    <header>
+        <h1>Aprende Programación</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Botón de cambio de tema -->
+        <button id="toggle-theme" type="button">Alternar Tema</button>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de Contacto -->
+        <section>
+            <h2>Ponte en Contacto con Nosotros</h2>
+            <p>
+                Si tienes alguna pregunta, comentario o simplemente deseas saludar, ¡nos encantaría saber de ti! Completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
+            </p>
+
+            <form id="formContacto" action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="asunto">Asunto:</label><br>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>2025 Aprende Programación. Creado con 💖 por Christian Párraga.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

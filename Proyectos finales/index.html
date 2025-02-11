@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprende Programación - HTML, CSS y JavaScript</title>
+    <meta name="description" content="Aprende los fundamentos de HTML, CSS y JavaScript de manera fácil y divertida.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado y navegación -->
+    <header>
+        <h1>Aprende Programación</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Botón de cambio de tema -->
+        <button id="toggle-theme" type="button">Alternar Tema</button>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de Inicio -->
+        <section id="inicio">
+            <h2>Bienvenido a Aprende Programación</h2>
+            <p>
+                Comienza tu aventura en el mundo del desarrollo web. Aquí aprenderás los fundamentos de <strong>HTML</strong>, <strong>CSS</strong> y <strong>JavaScript</strong> de forma sencilla y práctica.
+            </p>
+            <button onclick="location.href='contacto.html'">Contáctanos</button>
+        </section>
+
+        <!-- Sección de HTML -->
+        <section id="html">
+            <h2>HTML: La Base de la Web</h2>
+            <article>
+                <h3>¿Qué es HTML?</h3>
+                <p>
+                    HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web. Define la estructura del contenido y es el punto de partida para cualquier desarrollador web.
+                </p>
+            </article>
+            <article>
+                <h3>Tu Primer Documento HTML</h3>
+                <p>Veamos cómo crear un documento HTML básico:</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título de tu página&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <p>
+                    Este es un ejemplo simple que muestra la estructura básica de un documento HTML. Puedes probarlo copiándolo en un archivo con extensión <code>.html</code> y abrirlo en tu navegador.
+                </p>
+            </article>
+        </section>
+
+        <!-- Sección de CSS -->
+        <section id="css">
+            <h2>CSS: Diseña con Estilo</h2>
+            <article>
+                <h3>¿Qué es CSS?</h3>
+                <p>
+                    CSS (Cascading Style Sheets) es el lenguaje que utilizamos para estilizar un documento HTML. Con CSS, puedes controlar colores, fuentes, distribuciones y adaptar el diseño a diferentes dispositivos.
+                </p>
+            </article>
+        </section>
+
+        <!-- Sección de JavaScript -->
+        <section id="javascript">
+            <h2>JavaScript: Añade Interactividad</h2>
+            <article>
+                <h3>¿Qué es JavaScript?</h3>
+                <p>
+                    JavaScript es un lenguaje de programación que permite agregar interactividad a tus páginas web. Puedes crear contenido dinámico, responder a eventos del usuario y mucho más.
+                </p>
+            </article>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>
+                ¿Tienes preguntas o sugerencias? ¡No dudes en ponerte en contacto!
+            </p>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 Aprende Programación. Creado con 💖 por Christian Párraga.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

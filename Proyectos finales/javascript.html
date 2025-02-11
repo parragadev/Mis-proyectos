@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aprende JavaScript - Aprende Programación</title>
+    <meta name="description" content="Guía completa para aprender JavaScript y añadir interactividad a tus páginas web.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+    <!-- Encabezado y navegación -->
+     <header>
+        <h1>Aprende Programación</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">JavaScript</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Botón de cambio de tema -->
+        <button id="toggle-theme" type="button">Alternar Tema</button>
+     </header>
+
+     <!-- Contenido principal -->
+    <main>
+        <!-- Introducción -->
+        <section>
+            <h2>¡Bienvenido/a a la Guía Completa de JavaScript!</h2>
+            <p>
+                En esta sección, aprenderás cómo utilizar JavaScript para añadir interactividad y dinamismo a tus páginas web. Comenzaremos desde lo más básico y avanzaremos hacia conceptos más complejos. ¡Prepárate para descubrir el poder de la programación!
+            </p>
+        </section>
+
+        <!-- Tabla de Contenidos -->
+        <section>
+            <h2>Tabla de Contenidos</h2>
+            <ul>
+                <li><a href="#que-es-javascript">1. ¿Qué es JavaScript?</a></li>
+                <li><a href="#sintaxis-basica">2. Sintaxis Básica</a></li>
+                <li><a href="#variables-y-tipos">3. Variables y Tipos de Datos</a></li>
+                <li><a href="#operadores">4. Operadores</a></li>
+                <li><a href="#estructuras-de-control">5. Estructuras de Control</a></li>
+                <li><a href="#funciones">6. Funciones</a></li>
+                <li><a href="#dom">7. Manipulación del DOM</a></li>
+                <li><a href="#eventos">8. Eventos</a></li>
+                <li><a href="#ejercicios">9. Ejercicios Prácticos</a></li>
+                <li><a href="#recursos">10. Recursos Adicionales</a></li>
+            </ul>
+        </section>
+
+        <!-- 1. ¿Qué es JavaScript?-->
+        <section id="que-es-javascript">
+            <h2>1. ¿Que es JavaScript</h2>
+            <p>
+                JavaScript es un lenguaje de programacion interpretado, orientado a objetos y utilizado principalmente para desarrollar paginas webs interactivas. Es uno de los componentes fundamentales de las tecnologias web, junto con HTML y CSS.
+            </p>
+        </section>
+
+        <!-- 2. Sintaxis Básica -->
+        <section id="sintaxis-basica">
+            <h2>2. Sintaxis Básica</h2>
+            <p>
+                Javascript es un lenguaje flexible y versátil. A continuación, se presentan algunos elementos básicos de su sintaxis.
+            </p>
+            <article>
+                <h3>Incluir JavaScript en tu página</h3>
+                <p>Puedes incluir JavaScript en tu HTML de varias formas</p>
+                <ul>
+                    <li>Dentro de una etiqueta &lt;script&gt; en el &lt;head&gt; o al final del &lt;body&gt;:</li>
+                    <pre><code>
+&lt;script&gt;
+    // Tu código JavaScript aquí
+&lt;/script&gt;
+                    </code></pre>
+                    <li>Enlazando un archivo externo:</li>
+                    <pre><code>
+&lt;script src="script.js"&gt;&lt;/script&gt;
+                    </code></pre>
+                </ul>
+            </article>
+         </section>
+
+        <!-- Variables y Tipos de datos -->
+        <section id="variables-y-tipos">
+           <h2>3. Variables y Tipos de Datos</h2>
+           <article>
+            <h3>Declaración de Variables</h3>
+            <p>En JavaScript, puedes declarar variables usando `var`, `let`o `const`:</p>
+            <pre><code>
+var nombre = "Ana";
+let edad = 25;
+const PI = 3.1416;
+            </code></pre>
+            <p><strong>Nota:</strong>Es recomendable usar `let` y `const` en lugar de `var`para evitar problemas de alcance.</p>
+           </article>
+           <article>
+            <h3>Tipos de Datos</h3>
+            <ul>
+                <li><strong>String:</strong> Cadenas de texto. Ejemplo: `"Hola mundo"`</li>
+                <li><strong>Number:</strong> Numeros enteros o decimales. Ejemplo: `42, `3.14</li>
+                <li><strong>Boolean</strong>Valores lógicos `true` o `false`</li>
+                <li><strong>Null</strong>Ausencia intencionada de valor</li>
+                <li><strong>Undefined</strong>Variable declarada pero sin valor asignado</li>
+                <li><strong>Object</strong>Colección de propiedades</li>
+            </ul>
+           </article>
+          </section>
+
+        <!-- Operadores -->
+        <section id="operadores">
+            <h2>4. Operadores</h2>
+            <article>
+                <h3>Operadores Aritmeticos</h3>
+                <p>Se usan para realizar operaciones matemáticas:</p>
+                <ul>
+                    <li>`+` Suma</li>
+                    <li>`-`Resta</li>
+                    <li>`*` Multiplicación</li>
+                    <li>`/` División</li>
+                    <li>`%`Modulo (resto de la división)</li>
+                </ul>
+                <article>
+                    <h3>Operadores de Comparación</h3>
+                    <p>Permiten comparar valores:</p>
+                    <ul>
+                        <li>`==` Igualdad (compara valor)</li>
+                        <li>`===` Estrictamente igual (compara valor y tipo)</li>
+                        <li>`!=` Diferente</li>
+                        <li>`!==` Estrictamente diferente</li>
+                        <li>`&gt;` Mayor que</li>
+                        <li>`&lt;` Menor que</li>
+                        <li>`&gt;=` Mayor o igual que</li>
+                        <li>`&lt;=` Menor o igual que</li>
+                    </ul>
+                </article>
+            </article>
+        </section>
+
+        <!-- 5. Estructuras de Control -->
+        <section id="estructuras-de-control">
+            <h2>5. Estructuras de Control</h2>
+            <article>
+                <h3>Condicionales</h3>
+                <pre><code>
+    if (condicion) {
+        // código si se cumple la condición
+    } else {
+        // código si no se cumple la condición
+    }
+                </code></pre>
+            </article>
+            <article>
+                <h3>Bucles</h3>
+                <p><strong>For:</strong> Se usa cuando conoces el número de iteraciones.</p>
+                <pre><code>
+    for (let i = 0; i &lt; 5; i++) {
+        console.log(i);
+    }
+                </code></pre>
+                <p><strong>While:</strong> Se ejecuta mientras la condición sea verdadera.</p>
+                <pre><code>
+    let i = 0;
+    while (i &lt; 5) {
+        console.log(i);
+        i++;
+    }
+                </code></pre>
+            </article>
+        </section>
+
+        <!-- 6. Funciones -->
+        <section id="funciones">
+            <h2>6. Funciones</h2>
+            <article>
+                <h3>Declaración de Funciones</h3>
+                <pre><code>
+    function saludar(nombre) {
+        return "Hola, " + nombre + "!";
+    }
+
+    let mensaje = saludar("Carlos");
+    console.log(mensaje); // "Hola, Carlos!"
+                </code></pre>
+            </article>
+            <article>
+                <h3>Funciones Flecha (Arrow Functions)</h3>
+                <pre><code>
+    const saludar = (nombre) =&gt; {
+        return "Hola, " + nombre + "!";
+    };
+                </code></pre>
+            </article>
+        </section>
+
+        <!-- 7. Manipulación del DOM -->
+        <section id="dom">
+            <h2>7. Manipulación del DOM</h2>
+            <p>
+                El **DOM (Document Object Model)** es la representación de la página web en un formato que JavaScript puede manipular. Con el DOM, puedes acceder y modificar el contenido, estructura y estilos de tu sitio.
+            </p>
+            <article>
+                <h3>Seleccionar Elementos</h3>
+                <pre><code>
+    // Por ID
+    const titulo = document.getElementById('titulo');
+
+    // Por clase
+    const items = document.getElementsByClassName('item');
+
+    // Usando selectores CSS
+    const boton = document.querySelector('.boton');
+                </code></pre>
+            </article>
+            <article>
+                <h3>Modificar Contenido</h3>
+                <pre><code>
+    titulo.textContent = "Nuevo Título";
+    titulo.style.color = "blue";
+                </code></pre>
+            </article>
+        </section>
+
+        <!-- 8. Eventos -->
+        <section id="eventos">
+            <h2>8. Eventos</h2>
+            <p>
+                Los eventos permiten realizar acciones en respuesta a interacciones del usuario, como clics, movimientos del ratón o pulsaciones de teclas.
+            </p>
+            <article>
+                <h3>Escuchando Eventos</h3>
+                <pre><code>
+    const boton = document.getElementById('boton');
+
+    boton.addEventListener('click', () =&gt; {
+        alert("¡Has hecho clic en el botón!");
+    });
+                </code></pre>
+            </article>
+            <article>
+                <h3>Ejemplo Práctico</h3>
+                <p>Agrega el siguiente código a tu HTML:</p>
+                <pre><code>
+    &lt;button id="boton"&gt;Haz clic aquí&lt;/button&gt;
+                </code></pre>
+                <p>Y en tu JavaScript:</p>
+                <pre><code>
+    const boton = document.getElementById('boton');
+
+    boton.addEventListener('click', () =&gt; {
+        boton.textContent = "¡Me hiciste clic!";
+    });
+                </code></pre>
+            </article>
+        </section>
+
+        <!-- 9. Ejercicios Prácticos -->
+        <section id="ejercicios">
+            <h2>9. Ejercicios Prácticos</h2>
+            <article>
+                <h3>Ejercicio 1: Calculadora Sencilla</h3>
+                <p>Crea una calculadora básica que pueda sumar, restar, multiplicar y dividir dos números ingresados por el usuario.</p>
+                <p><em>Pista:</em> Usa `prompt()`, funciones y operadores aritméticos.</p>
+            </article>
+            <article>
+                <h3>Ejercicio 2: Lista de Tareas</h3>
+                <p>Desarrolla una aplicación que permita añadir tareas a una lista y marcarlas como completadas al hacer clic.</p>
+                <p><em>Pista:</em> Manipula el DOM para añadir elementos y manejar eventos de clic.</p>
+            </article>
+        </section>
+
+        <!-- 10. Recursos Adicionales -->
+        <section id="recursos">
+            <h2>10. Recursos Adicionales</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">Documentación de JavaScript en MDN</a></li>
+                <li><a href="https://www.w3schools.com/js/" target="_blank">Tutoriales de JavaScript en W3Schools</a></li>
+                <li><a href="https://javascript.info/" target="_blank">The Modern JavaScript Tutorial</a></li>
+                <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+                <li><a href="https://stackoverflow.com/questions/tagged/javascript" target="_blank">Stack Overflow - JavaScript</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <p>2025 Aprende Programación. Creado con 💖 por Christian Párraga.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+     <script src="script.js"></script> 
+</body>
+</html>
